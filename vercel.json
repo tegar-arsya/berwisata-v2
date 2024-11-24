@@ -1,10 +1,12 @@
 {
     "functions": {
         "api/index.php": {
-       "runtime": "vercel-php@0.6.0"
+       "runtime": "vercel-php@0.6.0",
+       "phpVersion": "8.1"
         },
         "api/assets.php": {
-       "runtime": "vercel-php@0.6.0"
+       "runtime": "vercel-php@0.6.0",
+       "phpVersion": "8.1"
         }
     },
 
