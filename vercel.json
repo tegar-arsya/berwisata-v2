@@ -33,9 +33,6 @@
         "LOG_CHANNEL": "stderr",
         "SESSION_DRIVER": "cookie",
         "VIEW_COMPILED_PATH": "/tmp"
-    },
-    "build": {
-        "installCommand": "composer install --no-dev --optimize-autoloader"
     }
 
 }
