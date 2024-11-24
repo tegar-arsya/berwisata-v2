@@ -1,10 +1,10 @@
 {
     "functions": {
         "api/index.php": {
-            "runtime": "vercel-php@0.6.0"
+            "runtime": "vercel-php@latest"
         },
         "api/assets.php": {
-            "runtime": "vercel-php@0.6.0"
+            "runtime": "vercel-php@latest"
         }
     },
 
@@ -21,6 +21,8 @@
     "env": {
         "APP_NAME": "Laravel Vercel",
         "APP_DEBUG": "false",
+        "APP_KEY": "APP_KEY=base64:u5L5AQ5WJrqkrUqul/0eKvJMTh+tmphRBuubs9woHG8=",
+        "APP_URL": "https://berwisata-v2.vercel.app",
         "APP_CONFIG_CACHE": "/tmp/config.php",
         "APP_EVENTS_CACHE": "/tmp/events.php",
         "APP_PACKAGES_CACHE": "/tmp/packages.php",
@@ -31,6 +33,9 @@
         "LOG_CHANNEL": "stderr",
         "SESSION_DRIVER": "cookie",
         "VIEW_COMPILED_PATH": "/tmp"
+    },
+    "build": {
+        "installCommand": "composer install --no-dev --optimize-autoloader"
     }
 
 }
